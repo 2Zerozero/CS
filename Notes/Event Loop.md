@@ -22,7 +22,7 @@
 
 자바스크립트에서는 대표적으로 `addEventListener(이벤트명, 콜백함수)` 가 존재한다.
 
-```
+```javascript
 <button id="myButton">Click me</button>
 <script>
     const button = document.getElementById('myButton');

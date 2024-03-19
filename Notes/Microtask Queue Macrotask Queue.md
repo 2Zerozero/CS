@@ -70,8 +70,10 @@ Promise.resolve().then(() => console.log('마이크로태스크 큐!'));
 
 ```javascript
 <script>
-  console.log('시작'); setTimeout(()=> console.log('타이머')); // (A) Promise.resolve() .then(()=> console.log('프로미스
-  1')) // (B) .then(()=> console.log('프로미스 2')); // (C) console.log('끝'); // (D)
+  console.log('시작'); setTimeout(()=> console.log('타이머')); // (A)
+  Promise.resolve() .then(()=> console.log('프로미스1')) // (B)
+  .then(()=> console.log('프로미스 2')); // (C)
+  console.log('끝'); // (D)
 </script>
 ```
 
